@@ -76,12 +76,14 @@ input.forEach((inputField) => {
     if (!valid.includes(event.key))
     {
         inputField.value = inputField.value.slice(0, -1);                    //when the key goes up, it checks to see if it was from the
+        document.querySelector("#swap").innerHTML = "";
     }                                                                        // array valid, if not, the key wont be inputed into the form
 
     if (event.key === "-" && inputField.value.length > 1 && inputField.value.slice(-1))     //if more than 1 - sign is pressed, it wont 
      {                                                                                      // allow more than 1
         inputField.value = inputField.value.slice(0, -1);
      }
+      document.querySelector("#swap").innerHTML = "";
   });
 });
 
