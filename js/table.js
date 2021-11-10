@@ -83,7 +83,7 @@ input.forEach((inputField) => {
      {                                                                                      // allow more than 1
         inputField.value = inputField.value.slice(0, -1);
      }
-      document.querySelector("#swap").innerHTML = "";
+     document.querySelector("#swap").innerHTML = "";
   });
 });
 
